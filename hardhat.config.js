@@ -28,6 +28,9 @@ module.exports = {
       url: process.env.GOERLI_URL, // 이곳에 URL을 수정하세요
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      allowUnlimitedContractSize: true,
+      gas: 2100000,
+      gasPrice: 8000000000,
     },
 
     // ropsten: {
